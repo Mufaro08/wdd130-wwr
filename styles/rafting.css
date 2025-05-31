@@ -7,11 +7,43 @@
     --body-font: 'Lato', sans-serif;
 }
 
-header{
-    background-color: var(--primary-color);
-    color: var(--accent2);
-    margin-bottom: 10px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: var(--body-font);
 }
+
+header img {
+  max-height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  font-family: var(--heading-font);
+}
+
+nav a {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+
+  nav {
+    justify-content: center;
+  }
+
+
+
 
 *{
     margin: 0;
@@ -69,7 +101,7 @@ h1{
     position: absolute; 
     width: 100%;
     height: auto;
-    sbackground-color: var(--accent2);
+    background-color: var(--accent2);
 }
 
 .hero article img {
@@ -90,12 +122,93 @@ h1{
     color: #fff;
     
 }
-footer{
-    background-color: var(--secondary-color);
-    width: 100%;
+
+
+.history {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 30px;
+  font-family: var(--body-font);
+  color: var(--accent2);
 }
 
-footer img{
-    width: 30px;
-    height: auto;
+.history-text {
+  flex: 1;
+  font-size: 1.1rem;
 }
+
+.history-image {
+  flex: 0 0 300px; /* fixed width for image container */
+  display: flex;
+  justify-content: center;
+}
+
+.history-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 30px;
+  font-family: var(--body-font);
+  color: var(--accent2);
+}
+
+.adventures figure {
+  margin: 0;
+  text-align: center;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.adventures figcaption {
+  padding: 10px 8px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--accent2);
+  color: #fff;
+  font-family: var(--body-font);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
+footer .socialmedia a img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+
+
