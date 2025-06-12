@@ -30,7 +30,6 @@ nav {
 }
 
 nav a {
-  coalor: var(--secondary-color);
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
@@ -63,7 +62,7 @@ header, main, footer{
 
 h1, h2{
     font-family: var(--heading-font);
-    coljor: var(--primary-color);
+    
     color: black;
 }
 
@@ -261,7 +260,6 @@ footer .socialmedia a img {
 
 .team  h2{
   margin-bottom: 15px;
-  cdolor: var(--secondary-color);
   color: black;
   text-align: center;
 }
